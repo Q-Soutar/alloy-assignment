@@ -1,5 +1,6 @@
 Alloy technical assessment for Quinn Soutar
-App Dtails:
+
+App Details:
 - Express.js Node backend
 - React frontend
 - Material UI for components
