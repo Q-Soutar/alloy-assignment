@@ -15,7 +15,7 @@ const evalResults = {
     review: {
         message:
             "Thank you for submitting - our team will review your information and get back to you with an update soon!",
-        icon: <GradingIcon sx={{ fontSize: 80, margin: "50%" }} />
+        icon: <GradingIcon sx={{ fontSize: 80 }} />
     },
     denial: {
         message:
