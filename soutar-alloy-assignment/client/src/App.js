@@ -4,7 +4,7 @@ import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 import "./App.css";
-import { Box, Button, Divider } from "@mui/material";
+import { Box, Button, Divider, Stack } from "@mui/material";
 import { useState } from "react";
 import dayjs from "dayjs";
 import {
@@ -19,6 +19,7 @@ import {
     CityInput,
     DOBInput
 } from "./Components/FormInputs/Inputs";
+import AccountBalanceIcon from "@mui/icons-material/AccountBalance";
 import LoadingSpinner from "./Components/OtherFormComponents/LoadingSpinner";
 import EvalResultDisplay from "./Components/OtherFormComponents/EvalResultDisplay";
 import { checkField } from "./Components/Utils/ValidationFunctions";
@@ -149,6 +150,13 @@ function App() {
         <Box sx={{ maxWidth: "50%", margin: "auto" }} alignItems="center">
             {applicationStatus === "form" && (
                 <Box sx={{ maxWidth: "100%" }}>
+                    <Stack alignItems="center" direction="row" gap={2}>
+                        <AccountBalanceIcon fontSize="large" />
+                        <Typography variant="h4">
+                            Second Bank of Revachol
+                        </Typography>
+                    </Stack>
+                    <br />
                     {/* Form fields */}
                     <FirstNameInput
                         formValues={formValues}
